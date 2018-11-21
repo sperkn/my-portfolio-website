@@ -1,9 +1,25 @@
+// Logo in header section
+.logo {
+  // height: 3.25rem;
+  margin-left: 6rem;
+}
+
+// user info(my info) in header section
 .user {
+  display: flex;
+  align-items: center;
 
   &__picture {
     display: inline-block;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 2.6rem;
+    color: $color-secondary;
+    margin-left: 2rem;
+    margin-right: 6rem;
   }
 }

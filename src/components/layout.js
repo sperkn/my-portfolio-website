@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
         <div className="container">
           <Header />
           <Sidebar />
-          <Content />
+          {/* <Content /> */}
           {children}
         </div>
         

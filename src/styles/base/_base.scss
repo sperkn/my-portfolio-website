@@ -1,8 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 
@@ -31,10 +34,10 @@ body {
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 8rem;
+  // padding: 8rem;
   min-height: 100vh;
 
-  @include respond(tab-port) {
-      padding: 0;
-  }
+  // @include respond(tab-port) {
+  //     padding: 0;
+  // }
 }
