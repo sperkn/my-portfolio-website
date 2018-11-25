@@ -11,6 +11,7 @@
 .header {
   background-color: $color-white;
   grid-column: sidebar-start / full-end;
+  border-bottom: 1px solid $color-grey-30;
 
   display: flex;
   justify-content: space-between;

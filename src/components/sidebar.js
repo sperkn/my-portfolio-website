@@ -1,6 +1,10 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import '../styles/main.scss'
+
+import mailIcon from '../images/SVG/mail.svg'
+import userIcon from '../images/SVG/user.svg'
+import laptopIcon from '../images/SVG/laptop.svg'
 
 class Sidebar extends React.Component {
   render() {
@@ -11,21 +15,30 @@ class Sidebar extends React.Component {
             </svg>
           </Link> */
       <nav className="sidebar">
-        <ul className="nav__list">
+        <ul className="nav">
           <li className="nav__item">
-            {/* <Link to="/about" className="nav__link">
-              <svg class="logo__icon">
-                <use xlink:href="" />
-              </svg>
+            <Link to="/about" className="nav__link">
+              <img src={userIcon} alt="About Icon" className="nav__icon"/>
               <span>About</span>
-            </Link> */}
-            About
+            </Link>
           </li>
-          <li className="nav__item">Projects</li>
-          <li className="nav__item">Contact</li>
+          <li className="nav__item">
+            <Link to="/projects" className="nav__link">
+              <img src={laptopIcon} alt="Projects Icon" className="nav__icon"/>
+              <span>Projects</span>
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/contact" className="nav__link">
+              <img src={mailIcon} alt="Contact Me Icon" className="nav__icon"/>
+              <span>Contact</span>
+            </Link>
+          </li>
         </ul>
 
-        <div class="legal">&copy; 2017 by trillo. All rights reserved.</div>
+        <div className="legal">
+          &copy; 2018 by Sperkn Labs, LLC. All rights reserved.
+        </div>
       </nav>
     )
   }

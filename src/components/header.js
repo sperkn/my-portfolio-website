@@ -16,11 +16,11 @@ class Header extends React.Component {
           </Link> */}
         </div>
         <div className="user">
-          <img
+          {/* <img
             src={headshot}
             alt="Avatar"
             className="user__picture"
-          />
+          /> */}
           <span className="user__name">Nicholas Kreps</span>
         </div>
       </header>
