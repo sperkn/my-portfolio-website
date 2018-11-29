@@ -2,9 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import '../styles/main.scss'
 
-import mailIcon from '../images/SVG/mail.svg'
 import userIcon from '../images/SVG/user.svg'
 import laptopIcon from '../images/SVG/laptop.svg'
+import resourceIcon from '../images/SVG/list.svg'
+import mailIcon from '../images/SVG/mail.svg'
+
+
 
 class Sidebar extends React.Component {
   render() {
@@ -29,6 +32,12 @@ class Sidebar extends React.Component {
             </Link>
           </li>
           <li className="nav__item">
+            <Link to="/picks" className="nav__link">
+              <img src={resourceIcon} alt="Resources Icon" className="nav__icon"/>
+              <span>Nick's Picks</span>
+            </Link>
+          </li>
+          <li className="nav__item">
             <Link to="/contact" className="nav__link">
               <img src={mailIcon} alt="Contact Me Icon" className="nav__icon"/>
               <span>Contact</span>
@@ -37,7 +46,7 @@ class Sidebar extends React.Component {
         </ul>
 
         <div className="legal">
-          &copy; 2018 by Sperkn Labs, LLC. All rights reserved.
+          &copy; 2018 by Nicholas Kreps. All rights reserved.
         </div>
       </nav>
     )

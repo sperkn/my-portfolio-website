@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Sperkn Labs - Nicholas Kreps',
+    title: 'Nicholas Kreps - Web Developer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     'gatsby-transformer-sharp',
