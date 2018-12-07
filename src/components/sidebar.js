@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
           <li className="nav__item">
             <Link to="/picks" className="nav__link">
               <img src={resourceIcon} alt="Resources Icon" className="nav__icon"/>
-              <span>Nick's Picks</span>
+              <span>Picks</span>
             </Link>
           </li>
           <li className="nav__item">

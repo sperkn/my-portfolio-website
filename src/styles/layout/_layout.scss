@@ -6,10 +6,16 @@
   background-color: $color-white;
   display: grid;
   grid-template-columns: [sidebar-start] minmax(21rem, 16%) [sidebar-end full-start] 1fr [full-end];
-  grid-template-rows: 9rem minmax(10rem, auto);
+  grid-template-rows: 9rem auto; 
+  // minmax(10rem, auto);
+  
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     margin: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+
+    grid-template-rows: 9rem 5rem auto;
   }
   
 }
@@ -18,6 +24,11 @@
   background-color: $color-white;
   grid-column: sidebar-start / full-end;
   border-bottom: 1px solid $color-grey-30;
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    border-bottom: none;
+  }
 
   display: flex;
   justify-content: center;
@@ -29,7 +40,16 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 2 / -1;
 
+  @include respond(tab-port) {
+    grid-column: sidebar-start / full-end;
+    grid-row: 2 / 3;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  // @include respond(tab-port) {
+  //   flex-direction: row;
+  // }
 }
