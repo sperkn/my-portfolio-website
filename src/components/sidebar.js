@@ -1,22 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import '../styles/main.scss'
 
 import userIcon from '../images/SVG/user.svg'
 import laptopIcon from '../images/SVG/laptop.svg'
 import resourceIcon from '../images/SVG/list.svg'
 import mailIcon from '../images/SVG/mail.svg'
 
-
-
 class Sidebar extends React.Component {
   render() {
     return (
-      /* <Link to="/" className="logo__link">
-            <svg class="logo__icon">
-              <use xlink:href="img/sprite.svg#icon-home" />
-            </svg>
-          </Link> */
       <nav className="sidebar">
         <ul className="nav">
           <li className="nav__item">
@@ -54,14 +46,3 @@ class Sidebar extends React.Component {
 }
 
 export default Sidebar
-
-{
-  /* <li class="side-nav__item side-nav__item--active">
-<a href="#" class="side-nav__link">
-    <svg class="side-nav__icon">
-        <use xlink:href="img/sprite.svg#icon-home"></use>
-    </svg>
-    <span>Hotel</span>
-</a>
-</li> */
-}

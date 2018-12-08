@@ -48,8 +48,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
 
-  // @include respond(tab-port) {
-  //   flex-direction: row;
-  // }
+.main {
+  grid-column: sidebar-end / full-end;
+  grid-row: 2 / -1;
+
+  @include respond(tab-port) {
+    grid-column: sidebar-start / full-end;
+    grid-row: 3 / -1;
+  }
 }
