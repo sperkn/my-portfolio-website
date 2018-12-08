@@ -1,6 +1,5 @@
 import React from 'react'
-// import '../styles/main.scss'
-// import { Link } from 'gatsby'
+
 import Layout from '../components/layout'
 import headshot from '../images/headshot1.jpg'
 import githubIcon from '../images/SVG/github.svg'
@@ -10,8 +9,10 @@ import mediumIcon from '../images/SVG/medium.svg'
 
 const IndexPage = () => (
   <Layout>
-    <div className="user">
-      <img src={headshot} alt="Avatar" className="user__picture" />
+    <section className="index">
+      <div className="user">
+        <img src={headshot} alt="Avatar" className="user__picture" />
+      </div>
       <div className="media">
         <ul className="media__list">
           <li className="media__item">
@@ -20,7 +21,7 @@ const IndexPage = () => (
               target="_blank"
               class="media__link"
             >
-              <img src={githubIcon} alt="Github Icon" className="" />
+              <img src={githubIcon} alt="Github Icon" className="media__icon" />
             </a>
           </li>
           <li className="media__item">
@@ -29,7 +30,11 @@ const IndexPage = () => (
               target="_blank"
               class="media__link"
             >
-              <img src={linkedinIcon} alt="Linkedin Icon" className="" />
+              <img
+                src={linkedinIcon}
+                alt="Linkedin Icon"
+                className="media__icon"
+              />
             </a>
           </li>
           <li className="media__item">
@@ -38,7 +43,11 @@ const IndexPage = () => (
               target="_blank"
               class="media__link"
             >
-              <img src={twitterIcon} alt="Twitter Icon" className="" />
+              <img
+                src={twitterIcon}
+                alt="Twitter Icon"
+                className="media__icon"
+              />
             </a>
           </li>
           <li className="media__item">
@@ -47,12 +56,12 @@ const IndexPage = () => (
               target="_blank"
               class="media__link"
             >
-              <img src={mediumIcon} alt="Medium Icon" className="" />
+              <img src={mediumIcon} alt="Medium Icon" className="media__icon" />
             </a>
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </Layout>
 )
 

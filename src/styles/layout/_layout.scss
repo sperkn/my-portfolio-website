@@ -51,6 +51,7 @@
 }
 
 .main {
+  background-color: $color-grey-0;
   grid-column: sidebar-end / full-end;
   grid-row: 2 / -1;
 
