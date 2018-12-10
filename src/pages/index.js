@@ -13,6 +13,7 @@ const IndexPage = () => (
       <div className="user">
         <img src={headshot} alt="Avatar" className="user__picture" />
       </div>
+      <h3 className="bio">Engineer &mdash; Developer &mdash; Creator</h3>
       <div className="media">
         <ul className="media__list">
           <li className="media__item">

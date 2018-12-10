@@ -14,25 +14,25 @@ class Sidebar extends React.Component {
           <li className="nav__item">
             <Link to="/about" className="nav__link">
               <img src={userIcon} alt="About Icon" className="nav__icon"/>
-              <span>About</span>
+              <span className="nav__text">About</span>
             </Link>
           </li>
           <li className="nav__item">
             <Link to="/projects" className="nav__link">
               <img src={laptopIcon} alt="Projects Icon" className="nav__icon"/>
-              <span>Projects</span>
+              <span className="nav__text">Projects</span>
             </Link>
           </li>
           <li className="nav__item">
             <Link to="/picks" className="nav__link">
               <img src={resourceIcon} alt="Resources Icon" className="nav__icon"/>
-              <span>Picks</span>
+              <span className="nav__text">Picks</span>
             </Link>
           </li>
           <li className="nav__item">
             <Link to="/contact" className="nav__link">
               <img src={mailIcon} alt="Contact Me Icon" className="nav__icon"/>
-              <span>Contact</span>
+              <span className="nav__text">Contact</span>
             </Link>
           </li>
         </ul>

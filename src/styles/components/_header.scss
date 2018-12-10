@@ -16,5 +16,12 @@
     @include respond(tab-port) {
       color: $color-grey-20;
     }
+
+    // &--1 {
+
+    //   &:hover {
+    //     display: none;
+    //   }
+    // }
   }
 }
