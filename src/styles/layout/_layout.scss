@@ -17,6 +17,10 @@
 
     grid-template-rows: 9rem 5rem auto;
   }
+
+  @include respond(phone) {
+    grid-template-rows: 9rem 7rem auto;
+  }
   
 }
 
