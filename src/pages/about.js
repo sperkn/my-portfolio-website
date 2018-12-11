@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import aboutImage from '../images/about.jpg'
 import htmlIcon from '../images/SVG/html5.svg'
 import cssIcon from '../images/SVG/css3.svg'
 import sassIcon from '../images/SVG/sass.svg'
@@ -17,7 +18,10 @@ const AboutPage = () => (
   <Layout>
     <section className="about">
       <div className="bio">
-        <h2>A little about me...</h2>
+        <div className="bio__heading">
+          <h2 className="bio__header">A little about me...</h2>
+          <img src={aboutImage} alt="Nick" className="bio__picture" />
+        </div>
         <p className="bio__text">
           I'm Nicholas Kreps, a full stack web developer from Miami, Florida. As
           a life-long learner, I love pushing myself to work on projects that
@@ -42,38 +46,48 @@ const AboutPage = () => (
         <h2 className="skills__header">Technologies</h2>
         <ul className="skills__list">
           <li className="skills__item">
-            <img src={htmlIcon} alt="HTML5 Icon" className="skills__logo" /> <span>HTML</span>
+            <img src={htmlIcon} alt="HTML5 Icon" className="skills__logo" />{' '}
+            <span className="skills__text">HTML</span>
           </li>
           <li className="skills__item">
-            <img src={cssIcon} alt="CSS3 Icon" className="skills__logo" /> <span>CSS</span>
+            <img src={cssIcon} alt="CSS3 Icon" className="skills__logo" />{' '}
+            <span className="skills__text">CSS</span>
           </li>
           <li className="skills__item">
-            <img src={sassIcon} alt="" className="skills__logo" /> <span>Sass(SCSS)</span>
+            <img src={sassIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">Sass</span>
           </li>
           <li className="skills__item">
-            <img src={bootstrapIcon} alt="" className="skills__logo" /> <span>Bootstrap</span>
+            <img src={bootstrapIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">Bootstrap</span>
           </li>
           <li className="skills__item">
-            <img src={jsIcon} alt="" className="skills__logo" /> <span>JavaScript</span>
+            <img src={jsIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">JavaScript</span>
           </li>
           <li className="skills__item">
-            <img src={nodeIcon} alt="" className="skills__logo" /> <span>Node.js</span>
+            <img src={nodeIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">Node.js</span>
           </li>
           <li className="skills__item">
-            <img src={mongoIcon} alt="" className="skills__logo" /> <span>MongoDB</span>
+            <img src={mongoIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">MongoDB</span>
           </li>
           <li className="skills__item">
-            <img src={angularIcon} alt="" className="skills__logo" /> <span>Angular</span>
+            <img src={angularIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">Angular</span>
           </li>
           <li className="skills__item">
-            <img src={reactIcon} alt="" className="skills__logo" /> <span>React</span>
+            <img src={reactIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">React</span>
           </li>
           <li className="skills__item">
-            <img src={gatsbyIcon} alt="" className="skills__logo" /> <span>GatsbyJS</span>
+            <img src={gatsbyIcon} alt="" className="skills__logo" />{' '}
+            <span className="skills__text">GatsbyJS</span>
           </li>
         </ul>
       </div>
-      <Link to="/">Go back to the homepage</Link>
+      {/* <Link to="/">Go back to the homepage</Link> */}
     </section>
   </Layout>
 )
