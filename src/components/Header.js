@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 class Header extends Component {
   render() {
