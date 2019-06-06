@@ -1,95 +1,43 @@
-import React from 'react'
-import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
-import aboutImage from '../images/about.jpg'
-import htmlIcon from '../images/SVG/html5.svg'
-import cssIcon from '../images/SVG/css3.svg'
-import sassIcon from '../images/SVG/sass.svg'
-import bootstrapIcon from '../images/SVG/bootstrap.svg'
-import nodeIcon from '../images/SVG/node-dot-js.svg'
-import jsIcon from '../images/SVG/javascript.svg'
-import mongoIcon from '../images/SVG/mongodb.svg'
-import angularIcon from '../images/SVG/angular.svg'
-import reactIcon from '../images/SVG/react.svg'
-import gatsbyIcon from '../images/SVG/gatsby.svg'
+import React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import aboutImage from '../images/headshot.jpg';
+import Footer from '../components/Footer';
 
 const AboutPage = () => (
   <Layout>
-    <section className="about">
-      <div className="bio">
-        <div className="bio__heading">
-          <h2 className="bio__header">A little about me...</h2>
-          <img src={aboutImage} alt="Nick" className="bio__picture" />
-        </div>
-        <p className="bio__text">
-          I'm Nicholas Kreps, a full stack web developer from Miami, Florida. As
-          a life-long learner, I love pushing myself to work on projects that
-          test me both logically and creatively. I embrace challenges and enjoy
-          finding solutions.
-        </p>
-        <p className="bio__text">
-          I started my career in civil engineering, working as a Project
-          Engineer for construction and design firms the last 7 years. Over the
-          last year, I have transitioned my focus to web development in order to
-          provide a medium for me to bring my technical and creative ideas to
-          life, as well as the ideas of others. If you've been wanting to start
-          your own company and need a website created, or you have an idea for a
-          web application that you would like prototyped, please feel free to{' '}
-          <Link to="/contact" className="bio__contact-link">
-            contact
-          </Link>{' '}
-          me. Depending on the position, I am also available for hire.
-        </p>
-      </div>
-      <div class="skills">
-        <h2 className="skills__header">Technologies</h2>
-        <ul className="skills__list">
-          <li className="skills__item">
-            <img src={htmlIcon} alt="HTML5 Icon" className="skills__logo" />{' '}
-            <span className="skills__text">HTML</span>
-          </li>
-          <li className="skills__item">
-            <img src={cssIcon} alt="CSS3 Icon" className="skills__logo" />{' '}
-            <span className="skills__text">CSS</span>
-          </li>
-          <li className="skills__item">
-            <img src={sassIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">Sass</span>
-          </li>
-          <li className="skills__item">
-            <img src={bootstrapIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">Bootstrap</span>
-          </li>
-          <li className="skills__item">
-            <img src={jsIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">JavaScript</span>
-          </li>
-          <li className="skills__item">
-            <img src={nodeIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">Node.js</span>
-          </li>
-          <li className="skills__item">
-            <img src={mongoIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">MongoDB</span>
-          </li>
-          <li className="skills__item">
-            <img src={angularIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">Angular</span>
-          </li>
-          <li className="skills__item">
-            <img src={reactIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">React</span>
-          </li>
-          <li className="skills__item">
-            <img src={gatsbyIcon} alt="" className="skills__logo" />{' '}
-            <span className="skills__text">GatsbyJS</span>
-          </li>
-        </ul>
-      </div>
-      {/* <Link to="/">Go back to the homepage</Link> */}
-    </section>
+    <div className="about">
+      <main className="about__bio">
+        <header className="about__header">
+          <h1 className="about__heading">Hi there! I'm Nick...</h1>
+          <img src={aboutImage} alt="Nick" className="about__picture" />
+        </header>
+        <section className="about__info">
+          <p className="about__text">
+            I'm a Professional Engineer with over seven years of experience in the
+            construction industry. I was born, and currently live, in Miami, Florida.
+            I graduated from Case Western Reserve University with a Bachelors of Science
+            in Civil Engineering.
+          </p>
+          <p className="about__text">
+            Last year, I completed a full stack web development bootcamp and have
+            continued with a self-directed learning approach while working full time.
+            I am determined to transition into the software engineering industry and
+            obtain a position where I can be challenged technically and creatively,
+            while continuing to improve the built and connected world.
+          </p>
+          <p className="about__text">
+            <strong>I am currently looking for a position as a Software Engineer. </strong>
+            If you, or your company, are hiring please feel free to <Link to="/contact" className="about__contact-link">
+              contact</Link> me.
+          </p>
+        </section>
+        <Link to="/"><button className="about__back">&larr; Back</button></Link>
+      </main>
+      <Footer />
+    </div>
+
   </Layout>
 )
 
-export default AboutPage
+export default AboutPage;
