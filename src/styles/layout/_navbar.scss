@@ -50,7 +50,6 @@
   &__icon {
     height: 3rem;
     width: 3rem;
-    fill: $color-white;
 
     @include respond(phone) {
       height: 2.5rem;
