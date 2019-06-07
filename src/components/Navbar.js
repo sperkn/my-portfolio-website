@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby'
-import Icon from './Icon';
+import { Link } from 'gatsby';
+import TwitterIcon from '../images/SVG/twitter.svg';
+import LinkedinIcon from '../images/SVG/linkedin.svg';
+import GithubIcon from '../images/SVG/github.svg';
+import MailIcon from '../images/SVG/mail.svg';
 
 class Navbar extends Component {
   render() {
@@ -12,7 +15,7 @@ class Navbar extends Component {
               href="https://twitter.com/NicholasKreps"
               className="nav__link"
             >
-              <Icon class={'nav__icon'} name={'icon-twitter'} />
+              <img src={TwitterIcon} alt="Twitter logo" className="nav__icon" />
             </a>
           </li>
           <li className="nav__item nav__item--2">
@@ -20,7 +23,7 @@ class Navbar extends Component {
               href="https://www.linkedin.com/in/nicholaskreps/"
               className="nav__link"
             >
-              <Icon class={'nav__icon'} name={'icon-linkedin'} />
+              <img src={LinkedinIcon} alt="Linkedin logo" className="nav__icon" />
             </a>
           </li>
           <li className="nav__item nav__item--3">
@@ -28,12 +31,12 @@ class Navbar extends Component {
               href="https://github.com/sperkn"
               className="nav__link"
             >
-              <Icon class={'nav__icon'} name={'icon-github'} />
+              <img src={GithubIcon} alt="Github logo" className="nav__icon" />
             </a>
           </li>
           <li className="nav__item nav__item--4">
             <Link to="/contact" className="nav__link">
-              <Icon class={'nav__icon'} name={'icon-mail'} />
+              <img src={MailIcon} alt="Mail Icon" className="nav__icon" />
             </Link>
           </li>
         </ul>
