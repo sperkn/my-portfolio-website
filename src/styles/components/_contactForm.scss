@@ -33,6 +33,7 @@
 
   &__info {
     width: 100%;
+    margin-bottom: 2rem;
     
     @include respond(phone) {
       color: $color-white;
