@@ -4,7 +4,6 @@ class ContactForm extends Component {
   render() {
     return (
       <form name="contact " method="post" data-netlify="true" data-netlify-honeypot="bot-field" className="form">
-        <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <div className="form__layout">
           <p className="form__info">Contact me by filling out the form below:</p>
