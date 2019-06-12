@@ -8,6 +8,7 @@
   &__link {
     text-decoration: none;
     transition: all .5s;
+    text-align: center;
 
     &:hover {
       transform: scale(1.01);
@@ -35,7 +36,6 @@
     color: $color-white;
     font-size: $fs-5;
     font-weight: 300;
-    margin-bottom: 3rem;
     list-style: none;
     cursor: default;
     opacity: 0;
