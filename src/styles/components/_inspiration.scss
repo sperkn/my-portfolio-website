@@ -1,0 +1,29 @@
+.inspo {
+  display: none;
+
+  &-active {
+    display: inline-block;
+    background-color: $color-white;
+    position: absolute;
+    top: -7rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: $fs-3;
+  }
+
+  &__link {
+    color: $color-black;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
