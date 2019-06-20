@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Inspiration from './Inspiration';
 
 class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        {/* <button className="footer__button">Website Inspiration</button> */}
+        <Inspiration class={"footer__button"}>Site Inspo</Inspiration>
         <span className="footer__legal">&copy; 2019 by Nicholas Kreps. All rights reserved.</span>
       </footer>
     );
