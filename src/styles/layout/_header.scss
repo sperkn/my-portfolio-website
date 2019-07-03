@@ -12,7 +12,6 @@
     padding-bottom: 2rem;
 
     &:hover {
-      transform: scale(1.01);
       border-radius: 2rem;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     }
@@ -32,7 +31,6 @@
       margin-bottom: 1.5rem;
       padding: 0;
     }
-
   }
 
   &__description {
