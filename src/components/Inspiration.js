@@ -10,11 +10,24 @@ class Inspiration extends Component {
     modal.classList.add("inspo-active");
   }
 
+  handleClose = () => {
+    return document.querySelector(".inspo").classList.remove("inspo-active");
+  }
+
   render() {
+    const closeBtn = document.querySelector(".inspo__close");
+    closeBtn.addEventListener('click', this.handleClose);
+
     return (
       <>
         <button className={this.props.class} onClick={this.handleClick}>Site Inspo</button>
         <div className="inspo">
+          <div className="inspo__close">
+            <span className="inspo__icon">
+              &nbsp;
+            </span>
+          </div>
+
           <ul className="inspo__list">
             <li className="inspo__item">
               <a
