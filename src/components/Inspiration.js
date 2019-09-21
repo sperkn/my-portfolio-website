@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Inspiration extends Component {
-  handleClick = () => {
+  openModal = () => {
     const modal = document.querySelector(".inspo");
     const hasActiveClass = modal.classList.contains("inspo-active");
     if (hasActiveClass) {
@@ -10,20 +10,19 @@ class Inspiration extends Component {
     modal.classList.add("inspo-active");
   }
 
-  handleClose = () => {
+  closeModal = () => {
+    const closeBtn = document.querySelector(".inspo__close");
+    closeBtn.addEventListener('click', this.handleClose);
     return document.querySelector(".inspo").classList.remove("inspo-active");
   }
 
   render() {
-    const closeBtn = document.querySelector(".inspo__close");
-    closeBtn.addEventListener('click', this.handleClose);
-
     return (
       <>
-        <button className={this.props.class} onClick={this.handleClick}>Site Inspo</button>
+        <button className={this.props.class} onClick={this.openModal}>Site Inspo</button>
         <div className="inspo">
           <div className="inspo__close">
-            <span className="inspo__icon">
+            <span className="inspo__icon" onClick={this.closeModal}>
               &nbsp;
             </span>
           </div>
