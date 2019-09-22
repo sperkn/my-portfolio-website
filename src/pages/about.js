@@ -14,22 +14,29 @@ const AboutPage = () => (
         </header>
         <section className="about__info">
           <p className="about__text">
-            I'm a Professional Engineer with over seven years of experience in the
-            construction industry. I was born, and currently live, in Miami, Florida.
-            I graduated from Case Western Reserve University with a Bachelors of Science
-            in Civil Engineering.
+            I am a Technical Support Specialist at Iterable, a marketing technology
+            startup, helping companies create multi-channel marketing campaigns to
+            deliver seamless and personalized customer experiences. I was born in Miami and
+            recently moved up to NYC for a new job and career!
           </p>
           <p className="about__text">
-            Last year, I completed a full stack web development bootcamp and have
-            continued with a self-directed learning approach while working full time.
-            I am determined to transition into the software engineering industry and
-            obtain a position where I can be challenged technically and creatively,
-            while continuing to improve the built and connected world.
+            As a civil engineering graduate from Case Western Reserve University, I obtained
+            my Professional Engineer license, and helped build and design major roadways in
+            South Florida. After several years in the industry, I realized it wasn't the career
+            I wanted to do for the rest of my life and decided it was time for a change. I was
+            looking for a role that would allow me to be more technical and creative, and in 2018,
+            I completed a full-stack web development bootcamp at
+            &nbsp;<a href="https://www.ironhack.com/en" className="about__contact-link">Ironhack</a>
+            &nbsp; while working full-time. Fast forward a year and I successfully made the transition
+            into the tech industry.
           </p>
           <p className="about__text">
-            <strong>I am currently looking for a position as a Software Engineer. </strong>
-            If you, or your company, are hiring please feel free to <Link to="/contact" className="about__contact-link">
-              contact</Link> me.
+            While my day-to-day responsbilites are not focused on programming, I have continued
+            to learn in my free time. Currently, I am learning React and diving deeper into the
+            fundamentals of JavaScript. If you'd like to get in touch, you can&nbsp;
+            <Link to="/contact" className="about__contact-link">email</Link>&nbsp;me or connect
+            with me on&nbsp;<a href="https://www.linkedin.com/in/nicholaskreps/" className="about__contact-link">LinkedIn</a>
+            &nbsp;and&nbsp;<a href="https://twitter.com/NicholasKreps" className="about__contact-link">Twitter</a>.
           </p>
         </section>
         <Link to="/"><button className="about__back">&larr; Back</button></Link>
