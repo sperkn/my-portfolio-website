@@ -31,12 +31,12 @@ const AboutPage = () => (
             into the tech industry.
           </p>
           <p className="about__text">
-            While my day-to-day responsbilites are not focused on programming, I have continued
-            to learn in my free time. Currently, I am learning React and diving deeper into the
-            fundamentals of JavaScript. If you'd like to get in touch, you can&nbsp;
+            While my day-to-day responsbilites are not focused on programming, I continue to learn in
+            my free time. Currently, I am learning React and diving deeper into the fundamentals of
+            JavaScript. If you'd like to get in touch, you can&nbsp;
             <Link to="/contact" className="about__contact-link">email</Link>&nbsp;me or connect
-            with me on&nbsp;<a href="https://www.linkedin.com/in/nicholaskreps/" className="about__contact-link">LinkedIn</a>
-            &nbsp;and&nbsp;<a href="https://twitter.com/NicholasKreps" className="about__contact-link">Twitter</a>.
+            with me on&nbsp; <a href="https://www.linkedin.com/in/nicholaskreps/" className="about__contact-link">LinkedIn</a>
+            &nbsp; and &nbsp;<a href="https://twitter.com/NicholasKreps" className="about__contact-link">Twitter</a>.
           </p>
         </section>
         <Link to="/"><button className="about__back">&larr; Back</button></Link>
