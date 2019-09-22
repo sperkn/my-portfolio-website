@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Nicholas Kreps',
-    titleTemplate: '%s · Nicholas Kreps',
+    titleTemplate: '%s · Engineer - Developer - Creator',
     description: 'Engineer, Developer & Creator',
     url: 'https://www.nicholaskreps.com',
     image: '/images/headshot.jpg',
