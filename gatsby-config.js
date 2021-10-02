@@ -9,7 +9,6 @@ module.exports = {
     twitter: '@nicholaskreps',
     nav: [
       { path: '/about', name: 'About' },
-      { path: '/contact', name: 'Contact' },
     ],
   },
   plugins: [
@@ -29,22 +28,20 @@ module.exports = {
         name: 'Nicholas Kreps',
         short_name: 'Nicholas Kreps',
         start_url: '/',
-        background_color: 'rgb(68, 108, 139)',
-        theme_color: 'rgb(68, 108, 139)',
+        background_color: 'rgb(95, 149, 190)',
+        theme_color: 'rgb(95, 149, 190)',
         display: 'minimal-ui',
         icon: 'src/images/headshot-logo.png', // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Source Sans Pro`,
-            variants: [`300`, `400`, `700`, `900`]
-          },
+          `source sans pro\:300,400,700,900` // you can also specify font weights and styles
         ],
-      },
+        display: 'swap'
+      }
     },
     `gatsby-plugin-sass`,
 

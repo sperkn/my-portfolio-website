@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <Inspiration class={"footer__button"}>Site Inspo</Inspiration>
-        <span className="footer__legal">&copy; 2019 by Nicholas Kreps. All rights reserved.</span>
+        <span className="footer__legal">&copy; 2021 by Nicholas Kreps. All rights reserved.</span>
       </footer>
     );
   }

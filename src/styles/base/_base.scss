@@ -35,17 +35,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   min-height: 100vh;
-  background-image:  linear-gradient(
-    rgba($color-background, 0.9)
-    rgba($color-background, 0.9)
-  ),url("../images/sherwin-lake-1440x1080.jpg");
+  background-color: rgba($color-background, 1.0);
   background-size: cover;
   background-repeat: no-repeat;
-
-  @include respond(tab-port) {
-    background-image:  linear-gradient(
-      rgba($color-background, 0.9)
-      rgba($color-background, 0.9)
-  ),url("../images/sherwin-lake-640x480.jpg");
-  }
 }

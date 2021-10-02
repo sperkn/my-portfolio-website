@@ -7,13 +7,17 @@
 
   &__link {
     text-decoration: none;
-    transition: all .5s;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform .5s;
     text-align: center;
     padding-bottom: 2rem;
 
     &:hover {
-      border-radius: 2rem;
+      border-radius: 1.5rem;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      background-color: rgba($color-white, 0.1);
+      transform:  scale(1.02);
     }
   }
 
@@ -40,18 +44,12 @@
     list-style: none;
     opacity: 0;
     animation: moveInBottom 1s ease .75s forwards;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   &__titles {
     opacity: 0.7;
-    text-transform: uppercase;
     display: inline;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-    &:not(:first-child) {
-      margin-left: 1.5rem;
-    }
   }
 }

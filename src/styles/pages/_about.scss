@@ -8,12 +8,15 @@
 
   &__bio {
     color: $color-white;
-    margin: 0 auto;
-    max-width: 85rem;
+    max-width: 70rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include respond(tab-land) {
+      margin: 0 12rem;
+    }
 
     @include respond(tab-port) {
       margin: 0 7rem;
@@ -38,10 +41,12 @@
 
   &__heading {
     font-size: $fs-9;
-    text-align: center;
+    // flex-grow: 2;
+    // text-align: center;
   }
 
   &__picture {
+    // flex-grow: 1;
     border-radius: 50%;
     width: 15rem;
     height: 15rem;

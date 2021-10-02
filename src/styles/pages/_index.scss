@@ -4,4 +4,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  &__link {
+    text-decoration: none;
+    font-size: $fs-5;
+    color: $color-white;
+    margin-top: 1rem; 
+    opacity: 0;
+    animation: fadeIn 1s ease .5s forwards;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
